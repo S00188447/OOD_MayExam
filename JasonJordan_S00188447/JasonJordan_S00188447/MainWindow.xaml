@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JasonJordan_S00188447"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
-        
+        <ListBox x:Name="PhoneNameLBX" HorizontalAlignment="Left" Height="230" Margin="156,39,0,0" VerticalAlignment="Top" Width="169" SelectionChanged="PhoneNameLBX_SelectionChanged"/>
+        <TextBlock x:Name="PhonePriceTBLK" HorizontalAlignment="Left" Margin="399,39,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="39" Width="159"/>
+        <Image x:Name="PhoneImage" HorizontalAlignment="Left" Height="166" Margin="399,103,0,0" VerticalAlignment="Top" Width="159" RenderTransformOrigin="0.5,0.215"/>
+        <ListBox x:Name="PhonePriceLBX" HorizontalAlignment="Left" Height="100" Margin="397,40,0,0" VerticalAlignment="Top" Width="174" RenderTransformOrigin="0.5,0.5">
+            <ListBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.709"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.619"/>
+                </TransformGroup>
+            </ListBox.RenderTransform>
+        </ListBox>
+
     </Grid>
 </Window>
