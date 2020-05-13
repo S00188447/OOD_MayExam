@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace JasonJordan_S00188447
 {
 
-   
+
 
 
     class Phone
@@ -24,6 +24,13 @@ namespace JasonJordan_S00188447
         public string Phone_Image { get; set; }
 
 
-
+        void IncreasePrice(int percentageIncrease = 10)
+        {
+            Price = Price * percentageIncrease/100 + Price;
+        }
     }
+
+
+
+
 }
