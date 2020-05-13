@@ -11,7 +11,7 @@ namespace JasonJordan_S00188447
 
 
 
-    class Phone
+    public class Phone
     {
         public int Price { get; set; }
 
@@ -24,7 +24,8 @@ namespace JasonJordan_S00188447
         public string Phone_Image { get; set; }
 
 
-        void IncreasePrice(int percentageIncrease = 10)
+
+        public void IncreasePrice(int percentageIncrease)
         {
             Price = Price * percentageIncrease/100 + Price;
         }
