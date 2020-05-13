@@ -11,14 +11,23 @@
         
         Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
 
-    
 
+    <Window.Resources>
+        <DataTemplate x:Key="ListboxTemplate">
+            <StackPanel Orientation="Horizontal" Margin="3">
+                <Image Source="{Binding PhoneImage}" Width="100"/>
+
+        
+
+            </StackPanel>
+        </DataTemplate>
+    </Window.Resources>
 
 
     <Grid>
         <ListBox x:Name="PhoneNameLBX" HorizontalAlignment="Left" Height="230" Margin="156,39,0,0" VerticalAlignment="Top" Width="169" SelectionChanged="PhoneNameLBX_SelectionChanged"/>
         <TextBlock x:Name="PhonePriceTBLK" HorizontalAlignment="Left" Margin="399,39,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="39" Width="159"/>
-        <Image x:Name="PhoneImage" HorizontalAlignment="Left" Height="166" Margin="399,103,0,0" VerticalAlignment="Top" Width="159" RenderTransformOrigin="0.5,0.215"/>
+        <Image x:Name="PhoneImage" HorizontalAlignment="Left" Source="" Height="166" Margin="399,103,0,0" VerticalAlignment="Top" Width="159" RenderTransformOrigin="0.5,0.215"/>
         <ListBox x:Name="PhonePriceLBX" HorizontalAlignment="Left" Height="100" Margin="397,40,0,0" VerticalAlignment="Top" Width="174" RenderTransformOrigin="0.5,0.5">
             <ListBox.RenderTransform>
                 <TransformGroup>
@@ -29,6 +38,30 @@
                 </TransformGroup>
             </ListBox.RenderTransform>
         </ListBox>
+
+        <Image Width="50" Margin="363,110,380.6,-110">
+            <Image.Source>
+                <BitmapImage DecodePixelWidth="300" UriSource="/images/apple.png" />
+            </Image.Source>
+        </Image>
+
+        <Image Width="50" Margin="275,110,468.6,-110">
+            <Image.Source>
+                <BitmapImage DecodePixelWidth="300" UriSource="/images/android.png" />
+            </Image.Source>
+        </Image>
+
+        <Image Width="50" Margin="558,-162,185.6,162">
+            <Image.Source>
+                <BitmapImage DecodePixelWidth="300" UriSource="/images/iphone11.png" Rotation="Rotate270" />
+            </Image.Source>
+        </Image>
+
+        <Image Width="50" Margin="563,-89,180.6,89">
+            <Image.Source>
+                <BitmapImage DecodePixelWidth="300" UriSource="/images/s20.jpg" Rotation="Rotate270" />
+            </Image.Source>
+        </Image>
 
     </Grid>
 </Window>
